@@ -7,16 +7,25 @@
     <title>MyMeal.com</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <img src="images/cooking.png" alt="Logo">
+        <div class="logo-div">
+            <img src="images/cooking.png" alt="Logo" id="logo">
+            <span>MyMeal.com</span>
+        </div>
         <ul>
-            <li class="nav-items">Home</li>
-            <li class="nav-items">Features</li>
-            <li class="nav-items">About</li>
-            <li class="nav-items">Contact Us</li>
+            <li class="nav-items"><a href="#home">Home</a></li>
+            <li class="nav-items"><a href="#services">Services</a></li>
+            <li class="nav-items"><a href="#about">About</a></li>
+            <li class="nav-items"><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
+    <section id="home">
+        <h2>Welcome to <span>MyMeal.com</span></h2>
+        <p>Welcome to our online meal delivery website! We offer a wide variety of delicious and nourishing meals, prepared by our team of expert chefs and delivered straight to your door. With our convenient ordering process and flexible delivery options, it's never been easier to enjoy restaurant-quality meals at home. Plus, with a constantly updating menu featuring dishes from a range of cuisines, there's always something new to try. So why wait? Place your order today and discover the convenience and enjoyment of having tasty meals delivered right to your door!</p>
+        <button>Order Now</button>
+    </section>
 </body>
 </html>

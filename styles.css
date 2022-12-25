@@ -3,18 +3,121 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
+
+
 /* NavBar */
 nav{
     display: flex;
-    border: 2px solid red;
-    height: 50px;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.3;
 }
 nav > ul{
+    margin-right: 1%;
     display: flex;
     list-style-type: none;
 }
 nav > ul > li{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    padding: 0px 20px 0px;
+    font-size: 1.2rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+.logo-div{
+    display: flex;
+    align-items: center;
+    color: #dd8832;
+    margin: 0.5% 1% 0.5%;
+    font-size: 2rem;
+}
+#logo{
+    height: 50px;
+}
+.logo-div span{
+    margin-left: 10px;
+    font-family: 'Sacramento';
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 0 5% 0;
+    justify-content: space-evenly;
+    height: 650px;
+}
+#home::before{
+    content: "";
+    background: url('images/pasta-gfe8ec9196_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+#home > h2{
+    margin: 10px;
+    color: white;
+    text-shadow: black 0 0 2px;
+    font-weight: 200;
+    font-size: 4rem;
+}
+#home > h2::selection{
+    color: #dd8832;
+    background-color: white;
+    text-shadow: none;
+}
+#home > h2 > span{
+    font-family: 'Sacramento';
+    color: #dd8832;
+    text-shadow: black 0 0 2px;
+    /* font-size: 1.7rem; */
+}
+#home > h2 > span::selection{
+    color: #dd8832;
+    background-color: white;
+    text-shadow: none;
+}
+#home > p {
+    color: white;
+    font-weight: 200;
+    font-size: 1.5rem;
+    text-shadow: black 0 0 2px;
+    background-color: rgba(0, 0, 0, 0.242);
+    padding: 30px 25px;
+    border-radius: 50px;
+}
+#home > p::selection{
+    background-color: white;
+    color: #dd8832;
+    text-shadow: none;
+}
+#home > button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'Sacramento';
+    font-size: 30px;
+    color: #dd8832;
+    background-color: white;
 }
