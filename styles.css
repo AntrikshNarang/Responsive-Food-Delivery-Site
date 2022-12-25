@@ -1,0 +1,20 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* NavBar */
+nav{
+    display: flex;
+    border: 2px solid red;
+    height: 50px;
+    justify-content: space-between;
+}
+nav > ul{
+    display: flex;
+    list-style-type: none;
+}
+nav > ul > li{
+    border: 1px solid blue;
+}
